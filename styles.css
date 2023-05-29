@@ -1,0 +1,44 @@
+h1{
+    
+}
+.head1{
+   text-align: center;
+   font-weight: bold;
+   background-color: #2a464742;
+   padding: 15px 0px;
+}
+h4{
+    text-decoration: underline;
+}
+#footer{
+    color: aliceblue;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+.intro{
+    text-align: center;
+    padding: 20px 5px;
+}
+#testimonials {
+    background-color:white;
+    padding: 100px;
+  }
+  .container-fluid{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .testimonial-image{
+    width: 30%;
+    border-radius: 10%;
+  }
+  .navbar{
+    background-color:lightskyblue;
+    border-radius: 20px;
+  }
+  .navlink{
+     padding-right: 15px;
+  }
+  .navbar-brand{
+     padding-left: 15px;
+  }
