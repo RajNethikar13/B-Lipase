@@ -1,13 +1,16 @@
 h1{
-    
+   font-weight:bold;
 }
 .head1{
    text-align: center;
    font-weight: bold;
    background-color: #2a464742;
    padding: 15px 0px;
+   margin: 5px 0px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
 }
-h4{
+.subhead{
     text-decoration: underline;
 }
 #footer{
@@ -42,3 +45,91 @@ h4{
   .navbar-brand{
      padding-left: 15px;
   }
+  .nav-item{
+   padding: 0px 10px;
+  }
+  #SL{
+   height: 500px;
+   width: 1000px;
+   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: aquamarine;
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+  }
+  
+  #MSA {
+   height: 500px;
+   width: 1000px;
+   background-color: rgb(205, 212, 60);
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+ }
+ #PLGY{
+   height: 500px;
+   width: 1000px;
+   background-color: rgb(231, 137, 197);
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+ }
+ .head2{
+  margin-top: 20px;
+   height: 70px;
+   text-align: center;
+ }
+ #PDB{
+   height: 500px;
+   width: 1000px;
+   background-color: rgb(231, 137, 197);
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+ }
+ #Rama{
+   #PLGY{
+      height: 500px;
+      width: 1000px;
+      background-color: rgb(155, 149, 153);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+ }
+ #tables{
+   #PLGY{
+      height: 500px;
+      width: 1000px;
+      background-color: rgb(126, 168, 141);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+ }
+ #lig{
+   height: 500px;
+   width: 1000px;
+   background-color: rgb(126, 168, 141);
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+ }
+ #RMSD{
+   height: 500px;
+   width: 1000px;
+   background-color: rgb(126, 168, 141);
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+ }
