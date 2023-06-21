@@ -68,23 +68,42 @@
                 
             </div>
 
-            <ul class="nav nav-tabs" id="myTab" >
-              <li class="nav-item" role="presentation">
-              <a href="sequence.html" class="subpanel">   <button class="nav-link active" id="home-tab"  data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Sequences</button>    </a> 
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="msa.html" class="subpanel"><button class="nav-link" id="profile-tab"  data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">MSA Analysis</button></a>
-              </li>
-              <li class="nav-item" role="presentation">
-               <a href="phylogeny.html" class="subpanel" > <button class="nav-link" id="contact-tab"  data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Phylogeny</button>
-               </li></a>
-              <li class="nav-item" role="presentation">
-                <a  href="conserve.html"  class="subpanel" ><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Conservation Analysis</button></a>
-              </li>
-              
-            </ul>
+            <div class="header">
+              <div>
+                <ul class="nav nav-tabs" id="myTab" >
+                  <li class="nav-item" role="presentation">
+                  <a href="sequence.html" class="subpanel">   <button class="nav-link active" id="home-tab"  data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Sequences</button>    </a> 
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="msa.html" class="subpanel"><button class="nav-link" id="profile-tab"  data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">MSA Analysis</button></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                   <a href="phylogeny.html" class="subpanel" > <button class="nav-link" id="contact-tab"  data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Phylogeny</button>
+                   </li></a>
+                  <li class="nav-item" role="presentation">
+                    <a  href="conserve.html"  class="subpanel" ><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Conservation Analysis</button></a>
+                  </li>
+                  
+                </ul>
+              </div> 
+              <div style="height: max-content;width: max-content;">
+                <a href="http://localhost:3000/fasta" download="false" >Sequence Fasta File</a>
+                <script>
+                  fetch('http://localhost:3000/fasta')
+                   .then(response => response.text())
+                    .then(data => {
+    // Handle the received data here
+                    console.log(data);
+                    })
+                   .catch(error => console.error(error));
+
+                </script>
+              </div>
+            </div>
+            
 
          </div>
+         
 
 
     </section>
