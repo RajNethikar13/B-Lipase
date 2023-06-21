@@ -1,70 +1,219 @@
-h1{
-   font-weight:bold;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Oxygen&family=Titillium+Web&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
-body{
-  height: 100%;
-}
-.head1{
-   text-align: center;
-   font-weight: bold;
-   background-color: #2a464742;
-   padding: 15px 0px;
-   margin: 5px 0px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   border-radius: 4px;
-}
-.subhead{
-    text-decoration: underline;
-}
-em {
-  font-style: italic;
+
+body {
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #e9defa 0%, #fbfcdb 100%); */
 
 }
-#footer{
-    color: aliceblue;
-    text-align: center;
-    background-color: black;
-    padding: 10px;
-    grid-row: 2;
-}
-.intro{
-    text-align: center;
-    padding: 20px 5px;
-}
-#testimonials {
-    background-color:white;
-    padding: 100px;
-  }
-  .container-fluid{
+
+header nav {
+    padding: 15px;
+    text-decoration: none;
+    /* background-image: linear-gradient(to left, #e9defa 0%, #fbfcdb 100%); */
+    background-color: #d5d5e8;
+
     display: flex;
-    justify-content: space-evenly;
-  }
-  .testimonial-image{
-    width: 30%;
-    border-radius: 10%;
-  }
-  .navbar{
-    background-color:lightskyblue;
-    border-radius: 20px;
-  }
-  .navlink{
-     padding-right: 15px;
-  }
-  .navbar-brand{
-     padding-left: 15px;
-  }
-  .nav-item{
-   padding: 0px 10px;
-  }
-  
- .head2{
-  margin-top: 20px;
-   height: 70px;
-   text-align: center;
- }
-section{
-    display: grid;
-    grid-template-rows: 1fr auto;
-  min-height: 100vh;
-  grid-row: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
+
+header nav h1 {
+    margin-left: 5px;
+    font-size: 1.5rem;
+    color: #5e546c;
+}
+
+header nav h1:hover {
+    color: #2b203a;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li a {
+    padding: 20px;
+    color: #5e546c;
+
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    color: #2b203a;
+}
+
+.home-container {
+    height: auto;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .home-box-1,.home-box-2{
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #ffffff;
+
+    width: 90%;
+    height: auto;
+
+    /* border-image: linear-gradient(to left, #e9defa 0%, #fbfcdb 100%) 1; */
+    border-color: #355795;
+    border-style: solid;
+    border-width: 15px;
+
+    text-align: center;
+}
+
+.slider{
+    margin-top: 30px;
+    height: 600px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img{
+    height: 500px;
+    width: 500px;
+}
+
+/* For Manual Navigation */
+
+.navigation-manual{
+    position: absolute;
+    width: 500px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #355795;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover{
+    background: #355795;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+/* For Automatic Navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-top: 540px;
+}
+
+.navigation-auto div{
+    border: 2px solid #355795;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #355795;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #355795;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #355795;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    color: #5e546c;
+    background-color: #d5d5e8;
+
+    text-align: center;
+}
+
+footer .mail a {
+    color: #757080;
+}
+
+footer .mail a:hover {
+    color: #000403;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************** Media Querries ****************************************/
+
+
+
