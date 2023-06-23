@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+  
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -186,7 +186,7 @@ footer {
     padding: 20px;
     color: #5e546c;
     background-color: #d5d5e8;
-
+    font-size: 17px;
     text-align: center;
 }
 

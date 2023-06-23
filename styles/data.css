@@ -8,48 +8,54 @@
  
 
 }
+a.nav-link{
+  color: #5E546E;
 
-header nav {
-  padding: 5px 10px;
+}
+li.nav-item{
+  
+  padding: 0px 12px;
+}
+
+nav.navbar.navbar-expand-lg {
+  padding: 5px 15px ;
   text-decoration: none;
   /* background-image: linear-gradient(to left, #e9defa 0%, #fbfcdb 100%); */
   background-color: #d5d5e8;
-
+  color: #000000;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-header nav h1 {
-  margin-left: 5px;
-  margin-bottom: 0;
-  font-size: 2rem;
+header h1{
+  margin:0px 0px 0px 5px;
+  font-size: 24px;
   color: #5e546c;
-  font-weight: bold;
+  
 }
 
-header nav h1:hover {
+header .navbar-brand:hover {
   color: #2b203a;
   cursor: pointer;
 }
 
-header nav ul {
+.navbar-nav {
   list-style-type: none;
 
   display: flex;
   flex-direction: row;
 }
 
-header nav ul li a {
-  padding: 20px;
+li.nav-item {
   color: #5e546c;
   text-decoration: none;
-  margin-bottom: 0;
-  font-size: 22px;
+ 
+  font-size: 20px;
 }
 
-header nav ul li a:hover {
+.navlink:hover {
   color: #2b203a;
 }
 
@@ -184,18 +190,24 @@ h1{
    font-style: italic;
  
  }
- footer {
+ footer#footer {
   height: auto;
   width: 100%;
-  padding: 20px;
+  padding:  20px ;
   color: #5e546c;
   background-color: #d5d5e8;
-
+  font-size: 17px;
   text-align: center;
 }
-
-footer .mail a {
-  color: #757080;
+h4{
+  font-size: 1.17em;
+  margin-bottom: 3px;
+}
+p{
+  margin: 5px 0px 0px;
+}
+a{
+  color: #0000EE;
 }
 
 footer .mail a:hover {
@@ -237,6 +249,10 @@ footer .mail a:hover {
     text-align: center;
   }
   
+  button.link-button{
+    text-align: left;
+    font-size: 20px;
+  }
  .nav-item.active{
     color: #495057;
     background-color: #fff;
@@ -268,4 +284,8 @@ footer .mail a:hover {
   border: 1px solid black;
   padding: 5px;
 
+ }
+ .info_body{
+  margin: 10px;
+  height: max-content;width: max-content;
  }

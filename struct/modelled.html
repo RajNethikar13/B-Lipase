@@ -12,28 +12,30 @@
   </head>
   <body>
    
-    <nav class="navbar navbar-expand-lg navbar-bg-light">
-      <a class="navbar-brand" href=" ">CepA Beta-Lactamase Database</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 10px;">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Data.html">Collective Data</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../faq.html">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../sign.html">Sign-in</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-bg-light">
+        <h1>CepA Beta-Lactamase Database</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 10px;">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Collective Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sign.html">Sign-in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <section >
 
@@ -74,21 +76,33 @@
                 <a href="Retrieved.html" class="subpanel">   <button class="nav-link" >Retrieved</button>    </a> 
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a href="modelled.html" class="subpanel"><button class="nav-link active">modelled</button></a>
+                  <a href="modelled.html" class="subpanel"><button class="nav-link active">Modelled</button></a>
                 </li>
                 <li class="nav-item" role="presentation">
                  <a href="Energy Minimization.html" class="subpanel" > <button class="nav-link" >Energy Minimization</button>
                  </li></a>
-                <li class="nav-item" role="presentation">
-                  <a  href="Validation.html"  class="subpanel" ><button class="nav-link">Validation</button></a>
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="validationDropdown" style="color: #0D6EFD;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Validation
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="validationDropdown">
+                    <li><a class="dropdown-item" href="ram.html">Ram Plot</a></li>
+                    <li><a class="dropdown-item" href="rmsd.html">RMSD</a></li>
+                   
+                  </ul>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a  href="Conservation Pattern.html"  class="subpanel" ><button class="nav-link">Conservation Pattern</button></a>
                   </li>
                 
               </ul>
+              <div class="info_body">
+                <a href="../structure/cepA template.xlsx/Sheet1.html">View ALL</a>
+                <br>
+                <a href="">CepA-01</a>
+              </div>
           </div>  
-            
+           
 
          </div>
 
@@ -96,13 +110,11 @@
     </section>
    
 
-  <footer id="footer">
-
-    <p>© Copyright 2022, CepA Beta-Lactamase, Hazra Lab.
-      <br> Contact us: <a class = "contact" href="mailto:saugata.iitk@gmail.com">saugata.iitk@gmail.com</a>
-    </p>
-
-  </footer>
+    <footer id="footer">
+      <h4 style="font-weight: bold;">Contact us by mailing at : </h4>
+      <a href="mailto:saugata.iitk@gmail.com" style="text-decoration: underline;">saugata.iitk@gmail.com</a>
+      <p >&copy; Copyright 2022, CepA Beta-Lactamase, Hazra Lab.</p>
+      </footer>
    
   </body>
 </html>
