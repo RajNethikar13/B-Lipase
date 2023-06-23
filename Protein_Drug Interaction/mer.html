@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/data.css">
+    <script src="../app.js"></script>
    
   </head>
   <body>
@@ -43,15 +44,15 @@
             <div class="sidebar">
                 
               <ul >
-                <li class="sidepanel active" role="presentation">
-                  <a href="Data.html"><button class="link-button ">Sequences</button></a>
+                <li class="sidepanel" role="presentation">
+                  <a href="../panel/Data.html"><button class="link-button ">Sequences</button></a>
                 </li>
-                <li class="sidepanel"  role="presentation">
+                <li class="sidepanel "  role="presentation">
                   <a href="../panel/structure.html">
-                    <button class="link-button">Structures</button>
+                    <button class="link-button ">Structures</button>
                   </a>
                 </li>
-                <li class="sidepanel" role="presentation">
+                <li class="sidepanel active" role="presentation">
                   <a href="../panel/prodrug.html">
                     <button class="link-button">Protein-Drug Interaction</button>
                   </a>
@@ -72,28 +73,64 @@
 
             <div class="header">
               <ul class="nav nav-tabs" id="myTab" >
+                <li class="nav-item active" role="presentation">
+                <a href="../Protein_Drug Interaction/amp.html" class="subpanel">   <button class="nav-link " >Ampicillin</button>    </a> 
+                </li>
                 <li class="nav-item" role="presentation">
-                  <a href="Data.html" class="subpanel">   <button class="nav-link " >Sequences</button>    </a> 
+                  <a href="../Protein_Drug Interaction/cepha.html" class="subpanel"><button class="nav-link " >Cephalexin</button></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                 <a href="../Protein_Drug Interaction/aztreo.html" class="subpanel" > <button class="nav-link " >Aztreonam</button>
+                 </li></a>
+                <li class="nav-item" role="presentation">
+                  <a  href="../Protein_Drug Interaction/clav.html"  class="subpanel" ><button class="nav-link" >Clavulanate</button></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a  href="../Protein_Drug Interaction/avibac.html"  class="subpanel" ><button class="nav-link " >Avibactum</button></a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a href="../sequence/msa.html" class="subpanel"><button class="nav-link" >MSA Analysis</button></a>
+                    <a  href="../Protein_Drug Interaction/mer.html"  class="subpanel" ><button class="nav-link " >Meropenem</button></a>
                   </li>
-                  <li class="nav-item" role="presentation">
-                   <a href="../sequence/phylogeny.html" class="subpanel" > <button class="nav-link active" >Phylogeny</button>
-                   </li></a>
-                  <li class="nav-item" role="presentation">
-                    <a  href="../sequence/conserve.html"  class="subpanel" ><button class="nav-link" >Conservation Analysis</button></a>
-                  </li>
-                
-              </ul>
-          </div>
-            
+                 
+              </ul>   
+              
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle"  data-bs-toggle="dropdown">Select the Variant</button>
+                    <ul class="dropdown-menu">
+                       <a href="CepA_01_AAA21533.1_ampicillinmini.pdb"><li class="dropdown-item">CepA_01</li></a> 
+                        <li class="dropdown-item">CepA_02</li>
+                        <li class="dropdown-item">CepA_03</li>
+                        <li class="dropdown-item">CepA_04</li>
+                        <li class="dropdown-item">CepA_05</li>
+                        <li class="dropdown-item">CepA_06</li>
+                        <li class="dropdown-item">CepA_07</li>
+                        <li class="dropdown-item">CepA_08</li>
+                        <li class="dropdown-item">CepA_09</li>
+                        <li class="dropdown-item">CepA_10</li>
+                        <li class="dropdown-item">CepA_11</li>
+                        <li class="dropdown-item">CepA_12</li>
+                        <li class="dropdown-item">CepA_13</li>
+                        <li class="dropdown-item">CepA_14</li>
+                        <li class="dropdown-item">CepA_15</li>
+                        <li class="dropdown-item">CepA_16</li>
+                        <li class="dropdown-item">CepA_17</li>
+                        <li class="dropdown-item">CepA_18</li>
+                        <li class="dropdown-item">CepA_19</li>
+                        <li class="dropdown-item">CepA_20</li>
+                         <li class="dropdown-item">CepA_21</li>
+                    </ul>
+                   
+                </div>
+              
+                <div id="dataContainer"></div>
 
+  
          </div>
-
+       
 
     </section>
    
+
     <footer id="footer">
       <h4 style="font-weight: bold;">Contact us by mailing at : </h4>
       <a href="mailto:saugata.iitk@gmail.com" style="text-decoration: underline;">saugata.iitk@gmail.com</a>

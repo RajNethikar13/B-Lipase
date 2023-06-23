@@ -12,28 +12,30 @@
   </head>
   <body>
    
-    <nav class="navbar navbar-expand-lg navbar-bg-light">
-      <a class="navbar-brand" href=" ">CepA Beta-Lactamase Database</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 10px;">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Data.html">Collective Data</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../faq.html">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../sign.html">Sign-in</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-bg-light">
+        <h1>CepA Beta-Lactamase Database</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 10px;">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Collective Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sign.html">Sign-in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <section >
 
@@ -42,7 +44,7 @@
                 
               <ul >
                 <li class="sidepanel active" role="presentation">
-                  <a href="../panel/Data.html"><button class="link-button ">Sequences</button></a>
+                  <a href="Data.html"><button class="link-button ">Sequences</button></a>
                 </li>
                 <li class="sidepanel"  role="presentation">
                   <a href="../panel/structure.html">
@@ -50,17 +52,17 @@
                   </a>
                 </li>
                 <li class="sidepanel" role="presentation">
-                  <a href="../panel/structure.html">
+                  <a href="../panel/prodrug.html">
                     <button class="link-button">Protein-Drug Interaction</button>
                   </a>
                 </li>
                 <li class="sidepanel" role="presentation">
-                  <a href="../panel/structure.html">
+                  <a href="../panel/variantanalysis.html">
                     <button class="link-button">Variant Analysis</button>
                   </a>
                 </li>
                 <li class="sidepanel"  role="presentation">
-                  <a href="../panel/structure.html">
+                  <a href="../panel/prodynamics.html">
                     <button class="link-button">Protein Dynamics</button>
                   </a>
                 </li>
@@ -71,17 +73,17 @@
             <div class="header">
               <ul class="nav nav-tabs" id="myTab" >
                 <li class="nav-item" role="presentation">
-                <a href="sequence.html" class="subpanel">   <button class="nav-link " id="home-tab"  data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="false">Sequences</button>    </a> 
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a href="msa.html" class="subpanel"><button class="nav-link active" id="profile-tab"  data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">MSA Analysis</button></a>
-                </li>
-                <li class="nav-item" role="presentation">
-                 <a href="phylogeny.html" class="subpanel" > <button class="nav-link " id="contact-tab"  data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Phylogeny</button>
-                 </li></a>
-                <li class="nav-item" role="presentation">
-                  <a  href="conserve.html"  class="subpanel" ><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Conservation Analysis</button></a>
-                </li>
+                  <a href="Data.html" class="subpanel">   <button class="nav-link" >Sequences</button>    </a> 
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="../sequence/msa.html" class="subpanel"><button class="nav-link  active" >MSA Analysis</button></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                   <a href="../sequence/phylogeny.html" class="subpanel" > <button class="nav-link" >Phylogeny</button>
+                   </li></a>
+                  <li class="nav-item" role="presentation">
+                    <a  href="../sequence/conserve.html"  class="subpanel" ><button class="nav-link" >Conservation Analysis</button></a>
+                  </li>
                 
               </ul>
           </div>   
@@ -93,13 +95,11 @@
     </section>
    
 
-  <footer id="footer">
-
-    <p>© Copyright 2022, CepA Beta-Lactamase, Hazra Lab.
-      <br> Contact us: <a class = "contact" href="mailto:saugata.iitk@gmail.com">saugata.iitk@gmail.com</a>
-    </p>
-
-  </footer>
+    <footer id="footer">
+      <h4 style="font-weight: bold;">Contact us by mailing at : </h4>
+      <a href="mailto:saugata.iitk@gmail.com" style="text-decoration: underline;">saugata.iitk@gmail.com</a>
+      <p >&copy; Copyright 2022, CepA Beta-Lactamase, Hazra Lab.</p>
+      </footer>
    
   </body>
 </html>

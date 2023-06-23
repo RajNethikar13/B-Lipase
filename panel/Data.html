@@ -2,26 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Oxygen&family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <title>Hazra lab</title>
-    <link rel="stylesheet" href="../styles/data.css">
      <!--bootstrap scripts--->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  
+  <link rel="stylesheet" href="../styles/data.css">  
    
-
-
   </head>
   <body>
    
     <header>
       <nav class="navbar navbar-expand-lg navbar-bg-light">
-        <a class="navbar-brand" href=" ">CepA Beta-Lactamase Database</a>
+        <h1>CepA Beta-Lactamase Database</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +39,7 @@
           </ul>
         </div>
       </nav>
-  </header>
+    </header>
 
     <section >
 
@@ -50,8 +47,8 @@
             <div class="sidebar">
                 
               <ul >
-                <li class="sidepanel " role="presentation">
-                  <a href="../panel/Data.html"><button class="link-button ">Sequences</button></a>
+                <li class="sidepanel active" role="presentation">
+                  <a href="Data.html"><button class="link-button ">Sequences</button></a>
                 </li>
                 <li class="sidepanel"  role="presentation">
                   <a href="../panel/structure.html">
@@ -76,44 +73,42 @@
               </ul>
                 
             </div>
+
             <div class="header">
-              <ul class="nav nav-tabs" id="myTab" >
-                <li class="nav-item" >
-                <a href="../sequence/sequence.html" class="subpanel">   <button class="nav-link " >Sequences</button>    </a> 
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a href="../sequence/msa.html" class="subpanel"><button class="nav-link" >MSA Analysis</button></a>
-                </li>
-                <li class="nav-item" role="presentation">
-                 <a href="../sequence/phylogeny.html" class="subpanel" > <button class="nav-link" >Phylogeny</button>
-                 </li></a>
-                <li class="nav-item" role="presentation">
-                  <a  href="../sequence/conserve.html"  class="subpanel" ><button class="nav-link" >Conservation Analysis</button></a>
-                </li>
+              <div>
+                <ul class="nav nav-tabs" id="myTab" >
+                  <li class="nav-item" role="presentation">
+                  <a href="Data.html" class="subpanel">   <button class="nav-link active" >Sequences</button>    </a> 
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="../sequence/msa.html" class="subpanel"><button class="nav-link" >MSA Analysis</button></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                   <a href="../sequence/phylogeny.html" class="subpanel" > <button class="nav-link" >Phylogeny</button>
+                   </li></a>
+                  <li class="nav-item" role="presentation">
+                    <a  href="../sequence/conserve.html"  class="subpanel" ><button class="nav-link" >Conservation Analysis</button></a>
+                  </li>
+                  
+                </ul>
+              </div> 
+              <div class="info_body">
+                <a href="http://localhost:3000/fasta" >Sequence Fasta File</a>
                 
-              </ul>
-            </div>  
-             
-           
-          
+              </div>
+            </div>
             
 
          </div>
+         
 
 
     </section>
    
-
-  <footer id="footer">
-
-    <div class="mail">
-      <h4>Contact us by mailing at : </h4>
-      <a href="mailto:saugata.iitk@gmail.com">saugata.iitk@gmail.com</a>
-  </div> 
-  <div class="copyright-text">
-      <p>&copy; Copyright 2022, CepA Beta-Lactamase, Hazra Lab.</p>
-  </div>
-
+<footer id="footer">
+  <h4 style="font-weight: bold;">Contact us by mailing at : </h4>
+  <a href="mailto:saugata.iitk@gmail.com" style="text-decoration: underline;">saugata.iitk@gmail.com</a>
+  <p >&copy; Copyright 2022, CepA Beta-Lactamase, Hazra Lab.</p>
   </footer>
    
   </body>
