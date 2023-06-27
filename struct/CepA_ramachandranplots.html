@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AlL Data</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table id="dataContainer">
+        <tr>
+            <th>Sl.No.</th>
+            <th>Enzyme Name</th>
+            <th>Residues(Most favoured)</th>
+            <th>Percentage</th>
+            <th>Residues(Additional Allowed)</th>
+            <th>Percentage</th>
+            <th>Residues(Generously Allowed)</th>
+            <th>Percentage</th>
+            <th>Residues(Disallowed)</th>
+            <th>Percentage</th>
+            
+        </tr>
+    </table>
+
+    <script>
+        
+var data = `
+1	CepA-WT	215	87.80%	28	11.40%	2	0.80%	0	0.00%
+2	CepA_01	219	89.00%	25	10.20%	2	0.80%	0	0.00%
+3	CepA_02	219	89.00%	24	9.80%	1	0.40%	1	0.40%
+4	CepA_03	219	89.40%	23	9.40%	2	0.80%	1	0.40%
+5	CepA_04	215	87.80%	27	11.00%	3	1.20%	0	0.00%
+6	CepA_05	216	88.20%	27	11.00%	2	0.80%	0	0.00%
+7	CepA_06	217	88.60%	25	10.20%	3	1.20%	0	0.00%
+8	CepA_07	218	89.00%	24	9.80%	2	0.80%	1	0.40%
+9	CepA_08	216	88.20%	26	10.60%	3	1.20%	0	0.00%
+10	CepA_09	217	88.60%	26	10.60%	2	0.80%	0	0.00%
+11	CepA_10	214	87.30%	28	11.40%	3	1.20%	0	0.00%
+12	CepA_11	216	88.20%	26	10.60%	3	1.20%	0	0.00%
+13	CepA_12	215	87.80%	28	11.40%	2	0.80%	0	0.00%
+14	CepA_13	218	89.30%	24	9.80%	1	0.40%	1	0.40%
+15	CepA_14	217	88.20%	26	10.60%	3	1.20%	0	0.00%
+16	CepA_15	216	88.20%	26	10.60%	3	1.20%	0	0.00%
+17	CepA_16	216	88.20%	26	10.60%	3	1.20%	0	0.00%
+18	CepA_17	216	88.20%	26	10.60%	3	1.20%	0	0.00%
+19	CepA_18	217	88.60%	25	10.20%	3	1.20%	0	0.00%
+20	CepA_19	216	88.20%	25	10.20%	3	1.20%	0	0.00%
+21	CepA_20	216	88.20%	26	10.60%	3	1.20%	0	0.00%
+22	CepA_21	218	89.00%	25	10.20%	2	0.80%	0	0.00%
+23	CepA_22	217	87.80%	27	11.00%	3	1.20%	0	0.00%
+`;
+
+// Get a reference to the data container table
+
+
+// Get a reference to the data container table
+var table = document.getElementById('dataContainer');
+
+// Split the data into lines
+var lines = data.split('\n');
+
+// Iterate over each line and create table rows
+for (var i = 0; i < lines.length; i++) {
+    var line = lines[i].trim();
+
+    // Skip empty lines
+    if (line === '') continue;
+
+    // Split the line into columns
+    var columns = line.split(/\s+/);
+
+    // Create a new table row
+    var row = document.createElement('tr');
+
+    // Create table cells and populate them with column values
+    for (var j = 0; j < columns.length; j++) {
+        var cell = document.createElement('td');
+        cell.textContent = columns[j];
+        row.appendChild(cell);
+    }
+
+    // Append the row to the table
+    table.appendChild(row);
+}
+    </script>
+</body>
+</html>
