@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Oxygen&family=Titillium+Web&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #e9defa 0%, #fbfcdb 100%); */
+}
+
+header nav {
+    padding: 5px 10px;
+    text-decoration: none;
+    /* background-image: linear-gradient(to left, #e9defa 0%, #fbfcdb 100%); */
+    background-color: #d5d5e8;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav h1 {
+    margin-left: 5px;
+    font-size: 2rem;
+    color: #5e546c;
+}
+
+header nav h1:hover {
+    color: #2b203a;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li a {
+    padding: 20px;
+    color: #5e546c;
+
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    color: #2b203a;
+}
+
+.login-container {
+    height: auto;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .login-box-1 {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+
+    width: auto;
+    height: auto;
+
+    /* border-image: linear-gradient(to left, #e9defa 0%, #fbfcdb 100%) 1; */
+    border-color: #355795;
+    border-style: solid;
+    border-width: 0.5rem;
+
+}
+
+.login-container .login-box-1 h1 {
+    padding: 0.5rem;
+}
+
+.login-container .login-box-1 p {
+    padding: 0.5rem;
+}
+
+.login-container .login-box-1 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container .login-box-1 form #email,
+.login-container .login-box-1 form #password {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-container .login-box-1 form .sign-in {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    color: #5e546c;
+    background-color: #d5d5e8;
+
+    text-align: center;
+
+    position:fixed;
+    bottom:0;
+}
+
+footer .mail a {
+    color: #757080;
+}
+
+footer .mail a:hover {
+    color: #000403;
+}
+
+
+
+
+
+
+
+
+
+/**************************************** Media Querries ****************************************/

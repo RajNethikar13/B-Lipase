@@ -13,41 +13,64 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="signstyle.css" rel="stylesheet">
+    <link href="./styles/signstyle.css" rel="stylesheet">
   </head>
-  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+  <body>
+    <!--------------------------------- Header and Navbar starts ----------------------------------->
 
+    <header>
+      <nav>
+          <h1>CepA Beta-Lactamase Database</h1>
+          <ul>
+              <li>
+                  <a href="./index.html">Home</a>
+              </li>
+              <li>
+                  <a href="./panel/Data.html">Collective Data</a>                    
+              </li>
+              <li>
+                  <a href="./faq.html">FAQ's</a>
+              </li>
+              <li>
+                <a href="./sign.html">Sign In</a>
+            </li>
+          </ul>
+      </nav>
+  </header>
 
-    
-<main class="form-signin w-100 m-auto">
-  <form>
-    <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  <!---------------------------------- Header and Navbar ends ------------------------------------>
 
-    <div class="form-floating">
+  <!---------------------------------- Login Container starts ------------------------------------>
 
-        <label for="floatingInput">Email address</label>
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      
-    </div>
-    <div class="form-floating">
-      
-        <label for="floatingPassword">Password   </label>
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      
-    </div>
+  <div class="login-container">
+      <div class="login-box-1">
+          <h1>Login to your account.</h1>
+          <p>Enter your username and password to login</p>
+          <form>
+               <input type="email" name="email" id="email" placeholder="Email id" required>
+               <input type="password" name="password" id="password" placeholder="Password" required>
+               <button class="sign-in">Sign In</button>
+               <!-- <p>Don't have an account? <a href="../Register/achiever-register.html">Register</a></p> -->
+          </form>
+      </div>
+  </div>
 
-    <div class="form-check text-start my-3">
-      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Remember me
-      </label>
-    </div>
-    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-    
-  </form>
-</main>
-<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!----------------------------------- Login Container ends ------------------------------------->
+   
+  <!--------------------------------------- Footer starts ---------------------------------------->
 
-    </body>
+  <footer>
+      <div class="mail">
+          <h4>Contact us by mailing at : </h4>
+          <a href="mailto:saugata.iitk@gmail.com">saugata.iitk@gmail.com</a>
+      </div> 
+      <div class="copyright-text">
+          <p>&copy; Copyright 2022, CepA Beta-Lactamase, Hazra Lab.</p>
+      </div>
+  </footer>
+
+  <!---------------------------------------- Footer ends ----------------------------------------->
+  
+
+  </body>
 </html>
